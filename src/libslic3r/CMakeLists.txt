@@ -93,6 +93,8 @@ set(SLIC3R_SOURCES
     Fill/FillPlanePath.hpp
     Fill/FillLine.cpp
     Fill/FillLine.hpp
+    Fill/FillPlane.cpp
+    Fill/FillPlane.hpp
     Fill/FillLightning.cpp
     Fill/FillLightning.hpp
     Fill/Lightning/DistanceField.cpp
