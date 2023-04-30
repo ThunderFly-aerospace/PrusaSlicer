@@ -43,6 +43,12 @@ set(SLIC3R_GTK "2" CACHE STRING "GTK version to use with wxWidgets on Linux")
 
 set(IS_CROSS_COMPILE FALSE)
 
+set(SLIC3R_STATIC 1)
+set(SLIC3R_GTK 3)
+set(SLIC3R_PCH OFF)
+set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/deps/build/destdir/usr/local")
+
+
 if (SLIC3R_STATIC)
     # Prefer config scripts over find modules. This is helpful when building with
     # the static dependencies. Many libraries have their own export scripts
