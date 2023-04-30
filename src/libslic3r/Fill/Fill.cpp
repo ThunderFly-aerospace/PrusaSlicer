@@ -634,6 +634,7 @@ Polylines Layer::generate_sparse_infill_polylines_for_anchoring(FillAdaptive::Oc
         case ipStars:
         case ipCubic:
         case ipLine:
+        case ipPlane:
         case ipConcentric:
         case ipHoneycomb:
         case ip3DHoneycomb:

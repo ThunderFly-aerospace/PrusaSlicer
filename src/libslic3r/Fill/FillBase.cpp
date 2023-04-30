@@ -17,6 +17,7 @@
 #include "FillGyroid.hpp"
 #include "FillPlanePath.hpp"
 #include "FillLine.hpp"
+#include "FillPlane.hpp"
 #include "FillRectilinear.hpp"
 #include "FillAdaptive.hpp"
 #include "FillLightning.hpp"
@@ -40,6 +41,7 @@ Fill* Fill::new_from_type(const InfillPattern type)
     case ipMonotonic:           return new FillMonotonic();
     case ipMonotonicLines:      return new FillMonotonicLines();
     case ipLine:                return new FillLine();
+    case ipPlane:               return new FillPlane();
     case ipGrid:                return new FillGrid();
     case ipTriangles:           return new FillTriangles();
     case ipStars:               return new FillStars();

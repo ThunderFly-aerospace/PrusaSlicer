@@ -2837,6 +2837,7 @@ void PrintObject::combine_infill()
                   region.config().fill_pattern == ipMonotonic     ||
                   region.config().fill_pattern == ipGrid          ||
                   region.config().fill_pattern == ipLine          ||
+                  //region.config().fill_pattern == ipPlane         || //??
                   region.config().fill_pattern == ipHoneycomb) ? 1.5f : 0.5f) * 
                     layerms.back()->flow(frSolidInfill).scaled_width();
             for (ExPolygon &expoly : intersection)
