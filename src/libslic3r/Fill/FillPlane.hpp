@@ -24,7 +24,7 @@ protected:
         ExPolygon    		             expolygon,
         Polylines                       &polylines_out) override;
 
-    coord_t _min_spacing;
+  /*  coord_t _min_spacing;
     coord_t _line_spacing;
     // distance threshold for allowing the horizontal infill lines to be connected into a continuous path
     coord_t _diagonal_distance;
@@ -42,7 +42,7 @@ protected:
         return (dist_X >= (this->_line_spacing - this->_line_oscillation) - TOLERANCE)
             && (dist_X <= (this->_line_spacing + this->_line_oscillation) + TOLERANCE)
             && (dist_Y <= this->_diagonal_distance);
-    }
+    }*/
 };
 
 }; // namespace Slic3r
