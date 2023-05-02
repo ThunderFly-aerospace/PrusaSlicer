@@ -450,6 +450,7 @@ std::string GCodeWriter::unretract()
             w.emit_f(m_extruder->deretract_speed() * 60.);
             w.emit_comment(this->config.gcode_comments, " ; unretract");
             gcode += w.string();
+            gcode += "G4 P100 ; wait for filament on nozzle\n";
         }
     }
     
