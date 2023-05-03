@@ -1686,6 +1686,9 @@ void GCodeViewer::load_toolpaths(const GCodeProcessorResult& gcode_result)
         }
     }
 
+    std::cout << "COG: [" <<m_cog.cog()[0] << ","<<m_cog.cog()[1]<<","<<m_cog.cog()[2] << "]" << std::endl;
+    std::cout << "Total volume mm3: " <<m_cog.total_mass()<<std::endl;
+
     // smooth toolpaths corners for the given TBuffer using triangles
     auto smooth_triangle_toolpaths_corners = [&gcode_result, &biased_seams_ids](const TBuffer& t_buffer, MultiVertexBuffer& v_multibuffer) {
         auto extract_position_at = [](const VertexBuffer& vertices, size_t offset) {
