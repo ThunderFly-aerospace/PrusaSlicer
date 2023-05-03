@@ -408,6 +408,7 @@ class GCodeViewer
         }
 
         Vec3d cog() const { return (m_total_mass > 0.0) ? (Vec3d)(m_position / m_total_mass) : Vec3d::Zero(); }
+        double total_mass() const { return m_total_mass; }
 
     private:
         void init() {
