@@ -1,3 +1,7 @@
+# PrusaSlicer Modified
+  - **Feature** 45deg plane infil for technical stuff
+  - **Dirty Hack** hardcoded delay after deretract (wait for filament)
+  - **Feature** Print COG and extruded volume to console when model is loaded to gcodeviewer
 
 ![PrusaSlicer logo](/resources/icons/PrusaSlicer.png?raw=true)
 
